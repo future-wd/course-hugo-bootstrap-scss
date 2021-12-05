@@ -10,4 +10,4 @@
 {{ $optsToCSS = (dict "transpiler" "libsass" "enableSourceMap" true "includePaths" (slice "node_modules")) }}
 {{ end }}
 {{ $css := resources.Get "scss/main.scss" | toCSS $optsToCSS | fingerprint "md5" }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
