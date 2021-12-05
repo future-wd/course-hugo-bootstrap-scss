@@ -9,5 +9,5 @@
 {{ if eq hugo.Environment "development" }}
 {{ $optsToCSS = (dict "transpiler" "libsass" "enableSourceMap" true "includePaths" (slice "node_modules")) }}
 {{ end }}
-{{ $css := resources.Get "scss/main.scss" | toCSS $optsToCSS }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}\">
+{{ $css := resources.Get "scss/main.scss" | toCSS $optsToCSS | fingerprint "md5" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
