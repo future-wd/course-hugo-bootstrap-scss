@@ -10,4 +10,4 @@
 {{ $optsToCSS = (dict "transpiler" "libsass" "enableSourceMap" true "includePaths" (slice "node_modules")) }}
 {{ end }}
 {{ $css := resources.Get "scss/main.scss" | toCSS $optsToCSS }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}\">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
