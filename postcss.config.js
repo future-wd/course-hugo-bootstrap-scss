@@ -2,7 +2,7 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   plugins: [
-    // these plugins below are only being run during production
+    // these plugins below will not be run during development
     !process.env.HUGO_ENVIRONMENT === 'development'
     ? autoprefixer()
     : null
