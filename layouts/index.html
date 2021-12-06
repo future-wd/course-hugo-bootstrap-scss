@@ -3,7 +3,7 @@
   <div class="container col-xxl-8">
     <div class="row align-items-center justify-content-center py-5 g-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="/img/bootstrap-themes.png" alt="Bootstrap Themes" class="img-fluid d-block mx-auto">
+        <img src="/img/bootstrap-themes.png" alt="Bootstrap Themes" class="img-fluid d-block mx-auto ">
       </div>
       <div class="col-lg-6 order-lg-first">
         <h1>{{ .Params.heading }}</h1>
@@ -35,7 +35,7 @@
       {{ range .Params.cards }}
       <div class="col-md-4">
         <div class="card mb-3">
-          <img src="{{ .img }}" class="card-img-top img-fluid" alt="{{ .title }}">
+          <img src="{{ .img }}" class="card-img-top img-fluid opacity-75-hover" alt="{{ .title }}">
           <div class="card-body">
             <h5 class="card-title">{{ .title }}</h5>
             <p class="card-text">{{ .text }}</p>
