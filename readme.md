@@ -1,4 +1,4 @@
-# Full length course - Introduction to Hugo with Bootstrap
+# Full length course - HUGO SCSS/SASS building with HUGO
 
 This course takes you through the entire process of setting up HUGO to compile SCSS/SASS to CSS including installation of NPM packages and how to customise bootstrap via variables. 
 
